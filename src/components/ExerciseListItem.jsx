@@ -8,11 +8,8 @@ const ExerciseListItem = ({ item }) => {
       <Pressable style={styles.exerciseContainer}>
         <Text style={styles.exerciseName}>{item?.name}</Text>
         <Text style={styles.exerciseSubtitle}>
-          <Text style={styles.subtitleHalf}>{item?.muscle.toUpperCase()} </Text>{" "}
-          |{" "}
-          <Text style={styles.subtitleHalf}>
-            {item?.equipment.toUpperCase()}
-          </Text>
+          <Text style={styles.subtitleHalf}>{item?.muscle} </Text> |{" "}
+          <Text style={styles.subtitleHalf}>{item?.equipment}</Text>
         </Text>
       </Pressable>
     </Link>
